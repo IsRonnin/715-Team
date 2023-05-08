@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начальная</title>
+    <link rel="icon" href="bullets.ico">
+    <style>
+        @font-face {
+        font-family: 'monts';
+        src: url('Montserrat.ttf') format('truetype');
+    }
+
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        pointer-events: none;
+        }
+        .content {
+        position: fixed;
+        font-family: 'monts';
+        font-size: 5vh;
+        font-weight: 450;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        z-index: 2;
+        margin-top: 31vh;
+        }
+        .glass{
+        background: rgba(0, 0, 0, 0.65);
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        z-index: 1;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        z-index: 2;
+        padding: 3vh;
+        gap: 1vh;   
+        place-self: center;
+        }
+      .centr{
+        display: block;
+        position: relative;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        z-index: 2;
+      }
+      .sss{
+        left: 0;
+        display:block;
+        position: fixed;
+        width: 100%;
+        height: max-content;
+        bottom: 0;
+        z-index: 2;
+      }
+      .el {
+        border-radius: 8vh;
+        background-color: #f1f1f11c;
+        width: 20vh;
+        height: 20vh;
+        transition: ease-in-out 0.3s;
+        }
+        
+        .el:hover{
+        border-radius: 8vh;
+        background-color: #f1f1f143;
+        width: 20vh;
+        height: 20vh;
+        }
+        
+        img{
+            display: block;
+            margin: 3vh auto auto auto;
+            width: 75%;
+            height: 75%;
+            color: white;
+            z-index: 2;
+        }
+
+        .img2-big{
+            width: 65%;
+            height: 65%;
+        }
+
+        .el-1{
+            background-color: #f1f1f143;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass"></div>
+    <video autoplay muted loop id="myVideo">
+        <source src="OOO.mp4" type="video/mp4">
+      </video>
+    <h1 class="content">В армии из пацанов делают настоящих мужчин… <br><u><b>Но без участия женщин.</b></u></h1>
+    <div class="sss">
+        <div class="centr">
+            <div class="container">
+                <a href="index.html" class="el el-1"><img class="img2-big" src="bullets.png" alt=""></a>
+                <a href="fight.html" class="el el-2"><img src="team.png" alt=""></a>
+                <a href="blood.html" class="el el-3"><img class="img2-big" src="fight.png" alt=""></a>
+                <a href="AK.html" class="el el-4"><img src="rifle.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
