@@ -13,6 +13,23 @@
         src: url('Montserrat.ttf') format('truetype');
     }
 
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(57, 57, 57, 0.396) rgba(225, 225, 225, 0.407);
+        }
+
+        *::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+        }
+        *::-webkit-scrollbar-track {
+        background: rgba(57, 57, 57, 0.396);
+        }
+        *::-webkit-scrollbar-thumb {
+        background-color: rgba(57, 57, 57, 0.396);
+        border-radius: 5px;
+        border: 3px solid rgba(225, 225, 225, 0.407);
+        }
     #myVideo {
         position: fixed;
         right: 0;
@@ -111,7 +128,7 @@
             margin-top: 3%;
             margin-right: 4%;
             background-color: rgba(0, 0, 0, 0.349);
-            overflow: hidden;
+            overflow-y: auto;
         }
         .heads
         {
@@ -120,8 +137,13 @@
         }
         .descrpt{
             font-size: 61%;
+            
         }
-
+        ul, #answ{
+            margin-left:5vh;
+            font-size: 61%;
+            text-align: start;
+        }
         .el-2{
             background-color: #f1f1f143;
         }
@@ -134,11 +156,19 @@
     <div class="content">
         <div class="text">
             <h class="heads">РАБОТА В ПАРЕ</h>
-            <p class="descrpt">Работа в паре важный навык для очень узких спецалистов такких как: ЧВК, Спецназ и им подобных,
-                и стоит сразу понимать - Зачем он нужен? Ответ: Работа в условиях плохой видимости и замкнутых пространствах.
-                Не стоит его изучать и тем более использовть если ваша работа не связана с этим - это не то что бесполезно а даже вредно.
+            <p class="descrpt">
+                Работа в паре важный навык для очень узких спецалистов таких как: ЧВК, Спецназ и им подобных,
+                Не стоит этому учится - это не то что бесполезно а даже вредно.
                 Ведь если вы решите сесть по среди поля со своим напарником то у снайпера противника станет на две насечки больше 
-            </p>
+                так что стоит сразу понимать - Зачем он нужен? 
+                <br>
+                <p id="answ">Ответ:</p> 
+                <ul>
+                    <li>в условиях плохой видимости</li>
+                    <li>в замкнутых пространствах</li>
+                    <li>для соблюдения тишины при тесном контакте</li>
+                </ul>
+            </p>    
         </div>
     </div>
     <div class="sss">

@@ -11,7 +11,23 @@
         font-family: 'monts';
         src: url('Montserrat.ttf') format('truetype');
     }
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(57, 57, 57, 0.396) rgba(225, 225, 225, 0.407);
+        }
 
+        *::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+        }
+        *::-webkit-scrollbar-track {
+        background: rgba(57, 57, 57, 0.396);
+        }
+        *::-webkit-scrollbar-thumb {
+        background-color: rgba(57, 57, 57, 0.396);
+        border-radius: 5px;
+        border: 3px solid rgba(225, 225, 225, 0.407);
+        }
     #myVideo {
         position: fixed;
         right: 0;
@@ -110,7 +126,7 @@
             margin-top: 3%;
             margin-right: 4%;
             background-color: rgba(0, 0, 0, 0.349);
-            overflow: hidden;
+            overflow: auto;
         }
         .heads
         {
